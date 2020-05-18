@@ -5,15 +5,23 @@ import {
     faChartBar,
     faClock,
     faCloudDownloadAlt,
+    faColumns,
     faComment,
+    faEye,
     faFileAlt,
+    faFileCode,
     faGlobe,
+    faHistory,
+    faMoon,
+    faPencilAlt,
     faPlus,
+    faShareSquare,
     faSignOutAlt,
     faThumbtack,
     faTimes,
     faTrash,
     faTv,
+    faQuestionCircle,
     faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -31,5 +39,6 @@ export function setUpFontAwesome() {
     library.add(faBolt, faPlus, faChartBar, faTv, faFileAlt, faCloudDownloadAlt,
         faTrash, faSignOutAlt, faComment, faDiscourse, faMastodon, faGlobe,
         faThumbtack, faClock, faTimes, faGithub, faGitlab, faGoogle, faFacebook,
-        faDropbox, faTwitter, faUsers, faAddressCard)
+        faDropbox, faTwitter, faUsers, faAddressCard, faEye, faPencilAlt, faColumns,
+        faMoon, faQuestionCircle, faShareSquare, faHistory, faFileCode)
 }
