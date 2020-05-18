@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const EditorMenu: React.FC = () => {
     useTranslation();
     return (
-        <Dropdown>
+        <Dropdown className="small">
             <Dropdown.Toggle variant="light" size="sm" id="dropdown-basic" className="button-link">
                 <Trans i18nKey="menu"/>
             </Dropdown.Toggle>
@@ -46,7 +46,7 @@ const EditorMenu: React.FC = () => {
                     <FontAwesomeIcon icon={["fab", "github"]}/> Gist
                 </Dropdown.Item>
                 <Dropdown.Item>
-                    <FontAwesomeIcon icon="clipboard"/> <Trans i18nKey="clipboard"/>
+                    <FontAwesomeIcon icon="paste"/> <Trans i18nKey="clipboard"/>
                 </Dropdown.Item>
 
                 <Dropdown.Divider/>
@@ -62,12 +62,6 @@ const EditorMenu: React.FC = () => {
                 </Dropdown.Item>
                 <Dropdown.Item>
                     <FontAwesomeIcon icon="file-code"/> Raw HTML
-                </Dropdown.Item>
-
-                <Dropdown.Divider/>
-
-                <Dropdown.Item>
-                    <FontAwesomeIcon icon="question-circle"/> <Trans i18nKey="help"/>
                 </Dropdown.Item>
 
             </Dropdown.Menu>

@@ -13,6 +13,7 @@ import {
     faGlobe,
     faHistory,
     faMoon,
+    faPaste,
     faPencilAlt,
     faPlus,
     faShareSquare,
@@ -40,5 +41,5 @@ export function setUpFontAwesome() {
         faTrash, faSignOutAlt, faComment, faDiscourse, faMastodon, faGlobe,
         faThumbtack, faClock, faTimes, faGithub, faGitlab, faGoogle, faFacebook,
         faDropbox, faTwitter, faUsers, faAddressCard, faEye, faPencilAlt, faColumns,
-        faMoon, faQuestionCircle, faShareSquare, faHistory, faFileCode)
+        faMoon, faQuestionCircle, faShareSquare, faHistory, faFileCode, faPaste)
 }
