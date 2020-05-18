@@ -1,0 +1,48 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+.taskbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid;
+  background-color: #f8f8f8;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.brand {
+  font-weight: bold;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  text-shadow: 0 0 1em transparent, 1px 1px 1.2px rgba(0, 0, 0, 0.004);
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.025em;
+}
+
+.button-middle {
+  margin-top: 9px;
+}
+
+.button-space-left {
+  margin-left: 10px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.button-link {
+  color: $secondary;
+}
