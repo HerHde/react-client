@@ -7,8 +7,8 @@ import "./editor-menu.scss";
 const EditorMenu: React.FC = () => {
     useTranslation();
     return (
-        <Dropdown className="small">
-            <Dropdown.Toggle variant="light" size="sm" id="dropdown-basic" className="button-link">
+        <Dropdown className="small" alignRight={true}>
+            <Dropdown.Toggle variant="light" size="sm" id="editor-menu" className="button-link">
                 <Trans i18nKey="menu"/>
             </Dropdown.Toggle>
 

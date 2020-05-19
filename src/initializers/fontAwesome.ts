@@ -5,6 +5,7 @@ import {
     faChartBar,
     faClock,
     faCloudDownloadAlt,
+    faCircle,
     faColumns,
     faComment,
     faEye,
@@ -41,5 +42,6 @@ export function setUpFontAwesome() {
         faTrash, faSignOutAlt, faComment, faDiscourse, faMastodon, faGlobe,
         faThumbtack, faClock, faTimes, faGithub, faGitlab, faGoogle, faFacebook,
         faDropbox, faTwitter, faUsers, faAddressCard, faEye, faPencilAlt, faColumns,
-        faMoon, faQuestionCircle, faShareSquare, faHistory, faFileCode, faPaste)
+        faMoon, faQuestionCircle, faShareSquare, faHistory, faFileCode, faPaste,
+        faCircle)
 }
