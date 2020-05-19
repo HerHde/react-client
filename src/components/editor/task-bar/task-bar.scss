@@ -35,6 +35,11 @@ a, a:hover {
   margin-left: 10px;
 }
 
+.button-space-right {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
 .pull-left {
   float: left;
 }
@@ -45,4 +50,8 @@ a, a:hover {
 
 .button-link {
   color: $secondary;
+}
+
+.all-caps {
+  text-transform: uppercase;
 }

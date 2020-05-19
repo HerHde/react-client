@@ -7,6 +7,7 @@ import {DarkModeButton} from "./dark-mode-button";
 import {EditorViewMode} from "./editor-view-mode";
 import {Trans, useTranslation} from "react-i18next";
 import {EditorMenu} from "./editor-menu";
+import {ConnectionIndicator} from "./connection-indicator";
 
 const TaskBar: React.FC = () => {
     useTranslation();
@@ -22,6 +23,9 @@ const TaskBar: React.FC = () => {
             <Button className="pull-left button-middle button-space-left button-link" size="sm" variant="outline-light">
                 <FontAwesomeIcon icon="question-circle"/>
             </Button>
+            <div className="pull-right button-middle button-space-right">
+                <ConnectionIndicator/>
+            </div>
             <div className="pull-right button-middle button-link">
                 <EditorMenu/>
             </div>
