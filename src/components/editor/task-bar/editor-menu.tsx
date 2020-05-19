@@ -2,6 +2,7 @@ import React from "react";
 import { Dropdown } from "react-bootstrap";
 import {Trans, useTranslation} from "react-i18next";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import "./editor-menu.scss";
 
 const EditorMenu: React.FC = () => {
     useTranslation();
