@@ -1,6 +1,5 @@
-import React from "react";
+import React, { Fragment } from "react";
 import {TaskBar} from "./task-bar/task-bar";
-import {Container} from "react-bootstrap";
 import {useSelector} from "react-redux";
 import {ApplicationState} from "../../redux";
 import {EditorMode} from "../../redux/editor/types";
@@ -24,13 +23,12 @@ const Editor: React.FC = () => {
         )
     }
     return (
-        <Container>
+        <Fragment>
             <TaskBar/>
-            {editorMode}
-            <div>
+            <div className="h-100">
                 {editor}
             </div>
-        </Container>
+        </Fragment>
     )
 }
 
