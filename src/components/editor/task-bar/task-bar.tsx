@@ -28,10 +28,10 @@ const TaskBar: React.FC = () => {
             </Nav>
             <Nav className="d-flex align-items-center text-secondary">
                 <Button className="button-space-left text-secondary" size="sm" variant="outline-light">
-                    <FontAwesomeIcon icon="plus"/><Trans i18nKey="new"/>
+                    <FontAwesomeIcon icon="plus"/> <Trans i18nKey="new"/>
                 </Button>
                 <Button className="button-space-left text-secondary" size="sm" variant="outline-light">
-                    <FontAwesomeIcon icon="share-square"/><Trans i18nKey="publish"/>
+                    <FontAwesomeIcon icon="share-square"/> <Trans i18nKey="publish"/>
                 </Button>
                 <div className="text-secondary">
                     <EditorMenu/>
