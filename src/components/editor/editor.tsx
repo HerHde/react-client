@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import {TaskBar} from "./task-bar/task-bar";
 import {useSelector} from "react-redux";
 import {ApplicationState} from "../../redux";
@@ -17,18 +17,18 @@ const Editor: React.FC = () => {
     } else if (editorMode === EditorMode.BOTH) {
         editor = (
             <SplitPane split="vertical">
-                <EditorWindow />
-                <MarkdownPreview />
+                <EditorWindow/>
+                <MarkdownPreview/>
             </SplitPane>
         )
     }
     return (
-        <Fragment>
+        <div className={"d-flex flex-column vh-100"}>
             <TaskBar/>
-            <div className="h-100">
+            <div className={"flex-fill"}>
                 {editor}
             </div>
-        </Fragment>
+        </div>
     )
 }
 
