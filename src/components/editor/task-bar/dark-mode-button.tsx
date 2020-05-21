@@ -4,8 +4,8 @@ import {ToggleButton, ToggleButtonGroup} from "react-bootstrap";
 
 const DarkModeButton: React.FC = () => {
     return (
-        <ToggleButtonGroup type="checkbox" defaultValue={[]} name="dark-mode" className="pull-left button-middle button-space-left">
-            <ToggleButton size="sm" value={1} variant="light">
+        <ToggleButtonGroup type="checkbox" defaultValue={[]} name="dark-mode" className="button-space-left">
+            <ToggleButton value={1} variant="light" className="text-secondary">
                 <FontAwesomeIcon icon="moon"/>
             </ToggleButton>
         </ToggleButtonGroup>

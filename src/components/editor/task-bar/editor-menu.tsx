@@ -1,5 +1,5 @@
 import React from "react";
-import { Dropdown } from "react-bootstrap";
+import {Dropdown} from "react-bootstrap";
 import {Trans, useTranslation} from "react-i18next";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "./editor-menu.scss";
@@ -8,7 +8,7 @@ const EditorMenu: React.FC = () => {
     useTranslation();
     return (
         <Dropdown className="small" alignRight={true}>
-            <Dropdown.Toggle variant="light" size="sm" id="editor-menu" className="button-link">
+            <Dropdown.Toggle variant="light" size="sm" id="editor-menu" className="text-secondary">
                 <Trans i18nKey="menu"/>
             </Dropdown.Toggle>
 

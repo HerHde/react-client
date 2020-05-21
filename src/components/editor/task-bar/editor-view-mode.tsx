@@ -13,15 +13,14 @@ const EditorViewMode: React.FC = () => {
             type="radio"
             name="options"
             defaultValue={editorConfig.editorMode}
-            className="pull-left button-middle"
             onChange={(value: EditorMode) => {setEditorModeConfig(value)}}>
-            <ToggleButton value={EditorMode.PREVIEW} variant="secondary" size="sm">
+            <ToggleButton value={EditorMode.PREVIEW} variant="outline-secondary">
                 <FontAwesomeIcon icon="eye"/>
             </ToggleButton>
-            <ToggleButton value={EditorMode.BOTH} variant="secondary" size="sm">
+            <ToggleButton value={EditorMode.BOTH} variant="outline-secondary">
                 <FontAwesomeIcon icon="columns"/>
             </ToggleButton>
-            <ToggleButton value={EditorMode.EDITOR} variant="secondary" size="sm">
+            <ToggleButton value={EditorMode.EDITOR} variant="outline-secondary">
                 <FontAwesomeIcon icon="pencil-alt"/>
             </ToggleButton>
         </ToggleButtonGroup>
