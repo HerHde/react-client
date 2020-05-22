@@ -5,7 +5,6 @@ import {ApplicationState} from "../../redux";
 import {EditorMode} from "../../redux/editor/types";
 import {EditorWindow} from "./editor-window/editor-window";
 import {MarkdownPreview} from "./markdown-preview/markdown-preview";
-import SplitPane from "react-split-pane";
 
 const Editor: React.FC = () => {
     const editorMode = useSelector((state: ApplicationState) => state.editorConfig.editorMode);
@@ -16,12 +15,13 @@ const Editor: React.FC = () => {
         editor = <MarkdownPreview/>;
     } else if (editorMode === EditorMode.BOTH) {
         editor = (
-            <SplitPane split="vertical">
+            <div>
                 <EditorWindow/>
                 <MarkdownPreview/>
-            </SplitPane>
+            </div>
         )
     }
+
     return (
         <div className={"d-flex flex-column vh-100"}>
             <TaskBar/>
